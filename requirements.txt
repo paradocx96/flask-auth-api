@@ -1,0 +1,7 @@
+Flask
+Flask-APScheduler
+Flask-Cors
+requests
+Flask-PyMongo
+pymongo[srv]
+python-dotenv
