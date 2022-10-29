@@ -31,12 +31,12 @@ mongo = PyMongo(app)
 myClient = MongoClient(mongodb_url_without_db)
 db = myClient["de_db"]
 
-'''
+"""
 Root Endpoints
 
 @hello_world()
 / [GET] - Hello World
-'''
+"""
 
 
 @app.route('/')
@@ -44,7 +44,7 @@ def hello_world():
     return 'Hello World!'
 
 
-'''
+"""
 Auth Endpoints
 
 @auth_signin()
@@ -52,7 +52,7 @@ Auth Endpoints
 
 @auth_signup()
 /auth/signup [POST] - User SignUp
-'''
+"""
 
 
 # User SignIn method
@@ -195,7 +195,7 @@ def auth_signup():
         return not_found()
 
 
-'''
+"""
 User Management Endpoints
 
 @get_all_users()
@@ -215,7 +215,7 @@ User Management Endpoints
 
 @update_username()
 /user/change/username [PUT] - Update username
-'''
+"""
 
 
 # User - Get All method

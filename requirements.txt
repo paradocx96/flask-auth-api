@@ -4,3 +4,4 @@ requests
 Flask-PyMongo
 pymongo[srv]
 python-dotenv
+flake8_docstrings
